@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
-app.post("/authenticate", async (req, res) => {
+app.post("https://sheepchat.onrender.com//authenticate", async (req, res) => {
   const { username } = req.body;
   try {
     const r = await axios.put(
